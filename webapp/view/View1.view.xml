@@ -1,0 +1,33 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m" controllerName="algo.fiori.controller.View1">
+<Page title="View 1">
+ <headerContent>
+   <Button icon="sap-icon://action" press="onGoTo"></Button>
+ </headerContent>
+ <content>
+  <!-- <Button text="Go to Next" press="onGoTo"></Button> -->
+  <SearchField id="idsearsh" search="onSearch"></SearchField>
+  <List id="idList" items="{path : '/fruit', sorter:{path : 'season', group : true}}" itemPress="onItemPress"
+   mode="SingleSelectMaster" delete="onItemDelet">
+    <headerToolbar>
+       <Toolbar >
+          <ToolbarSpacer ></ToolbarSpacer>
+          <Button icon="sap-icon://delete" press="onItemsDelete"></Button>
+       </Toolbar>
+    </headerToolbar>
+    <items>
+      <ObjectListItem  title="{name}" intro="{taste}" number="{price}" numberUnit="{currency}" icon="{image}" type="Active">
+       <attributes>
+          <ObjectAttribute title="Color" text="{color}" ></ObjectAttribute>
+          <ObjectAttribute title="Season" text="{season}"></ObjectAttribute>
+       </attributes>
+       <firstStatus>
+           <ObjectStatus text="{path:'availability', formatter:'.formatter.getStatus'}" state="{path:'availability', formatter:'.formatter.getState'}"></ObjectStatus>
+       </firstStatus>
+
+      </ObjectListItem>
+      
+    </items> 
+  </List>
+ </content>
+</Page>
+</mvc:View>

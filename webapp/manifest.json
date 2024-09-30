@@ -1,0 +1,110 @@
+{
+    "sap.app": {
+        "id": "algo.fiori",
+        "type": "application",
+        "title": "{{appTitle}}",
+        "applicationVersion": {"version": "0.0.1"},
+        "sourceTemplate": {
+            "id": "@sap/ux-app-migrator:freestyle",
+            "version": "1.13.5",
+            "toolsId": "682bcab1-945b-4d00-b5fb-8fc074d5164b"
+        },
+        "i18n": {
+          "bundleUrl": "i18n/i18n.properties",
+          "supportedLocales": [""],
+          "fallbackLocale": ""
+        }
+      },
+        "sap.ui":{
+            "supportedThemes": ["sap_fiori_3_dark","sap_horizon"],
+            "fullWidth": true,
+           "deviceTypes":{
+              "desktop": true,
+              "phone": true,
+              "tablet": true
+           },
+           "technology": "UI5"
+        },
+        "sap.ui5":{
+          "dependencies": {
+            "minUI5Version": "1.123.2",
+            "libs": {
+                "sap.m":{},
+                "sap.ui.layout":{}
+            }
+          },
+          "contentDensities": {
+            "compact": true,
+            "cozy": true
+          },
+          "rootView":{
+             "viewName": "algo.fiori.view.App",
+             "id": "idRoot",
+             "type": "XML"
+          },
+          "routing": {
+            "config":{
+              "routerClass": "sap.m.routing.Router",
+              "viewPath": "algo.fiori.view",
+              "viewType": "XML",
+              "controlId": "idAppCon"
+            },
+            "routes":[
+              {
+                "pattern": "",
+                "name": "home", 
+                "target":["plaid","modi"]
+              },
+              {
+                "pattern": "fruits/{idFruit}",
+                "name": "detail", 
+                "target":["plaid","putin"]
+              },
+              {
+                "pattern": "suppliers/{suppId}",
+                "name": "supplier", 
+                "target":["plaid","trump"]
+              }
+            ],
+            "targets": {
+                "plaid":{
+                  "id": "idView1",
+                  "viewName": "View1",
+                  "controlAggregation": "masterPages"
+                },
+                "modi":{
+                  "id": "idEmpty",
+                  "viewName": "Empty",
+                  "controlAggregation": "detailPages"
+                },
+                "putin":{
+                  "id": "idView2",
+                  "viewName":"View2",
+                  "controlAggregation": "detailPages"
+                },
+                "trump":{
+                  "id": "idView3",
+                  "viewName":"View3",
+                  "controlAggregation": "detailPages"
+                }
+            }
+          },
+          "models": {
+            "i18n":{
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                  "bundleUrl": "i18n/i18n.properties",
+                  "async": true,
+                  "supportedLocales": [""],
+                  "fallbackLocale": ""
+                }
+            },
+            "":{
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/data.json",
+                "settings": {
+                }
+            }
+          }
+        }
+}

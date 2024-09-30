@@ -1,0 +1,6 @@
+<!-- this is root view -->
+<mvc:View xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m" controllerName="algo.fiori.controller.App">
+  <!-- container control -->
+   <!-- <App id="idAppCon"></App> -->
+   <SplitApp id="idAppCon"></SplitApp>
+</mvc:View>

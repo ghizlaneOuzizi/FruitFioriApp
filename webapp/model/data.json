@@ -1,0 +1,205 @@
+{   "chartType" : "column",
+    "fruit" :[
+        {
+          "name": "Apple",
+          "color": "Red",
+          "size": "Medium",
+          "taste": "Sweet",
+          "vitamin_C": "4.6mg/100g",
+          "price": 0.5,
+          "currency": "USD",
+          "season": "Autumn",
+          "availability": "A",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/220px-Red_Apple.jpg"
+        },
+        {
+          "name": "Banana",
+          "color": "Yellow",
+          "size": "Large",
+          "taste": "Sweet",
+          "vitamin_C": "8.7mg/100g",
+          "price": 0.3,
+          "currency": "USD",
+          "season": "Year-round",
+          "availability": "A",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/220px-Bananas_white_background_DS.jpg"
+        },
+        {
+          "name": "Orange",
+          "color": "Orange",
+          "size": "Medium",
+          "taste": "Sweet and tangy",
+          "vitamin_C": "53.2mg/100g",
+          "price": 0.6,
+          "currency": "USD",
+          "season": "Winter",
+          "availability": "O",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Orange-Whole-%26-Split.jpg/220px-Orange-Whole-%26-Split.jpg"
+        },
+        {
+          "name": "Grapes",
+          "color": "Purple, Green",
+          "size": "Small",
+          "taste": "Sweet",
+          "vitamin_C": "3.2mg/100g",
+          "price": 1.2,
+          "currency": "USD",
+          "season": "Summer",
+          "availability": "D",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/220px-Table_grapes_on_white.jpg"
+        },
+        {
+          "name": "Strawberry",
+          "color": "Red",
+          "size": "Small",
+          "taste": "Sweet and slightly tart",
+          "vitamin_C": "58.8mg/100g",
+          "price": 2.0,
+          "currency": "USD",
+          "season": "Spring",
+          "availability": "O",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PerfectStrawberry.jpg/220px-PerfectStrawberry.jpg"
+        }
+      ],
+    "suppliers" :[
+      {
+        "name": "FreshFruits Inc.",
+        "city": "New York",
+        "sinceWhen": "2010-05-20",
+        "contact": "john.doe@freshfruits.com",
+        "numberOfStores": 10,
+        "specialties": [{"name": "Apples", "supply": 10}, {"name": "Oranges", "supply": 10}, {"name": "Bananas", "supply": 10}],
+        "personName": "John Doe"
+      },
+      {
+        "name": "Tropical Treats",
+        "city": "Miami",
+        "sinceWhen": "2008-11-15",
+        "contact": "maria@tropicaltreats.com",
+        "numberOfStores": 8,
+        "specialties": [{"name": "Mangoes", "supply": 10}, {"name": "Pineapples", "supply": 10}, {"name": "Coconuts", "supply": 10}],
+        "personName": "Maria Sanchez"
+      },
+      {
+        "name": "Orchard Delights",
+        "city": "Los Angeles",
+        "sinceWhen": "2012-03-10",
+        "contact": "david@orcharddelights.com",
+        "numberOfStores": 12,
+        "specialties": [{"name": "Cherries", "supply": 10}, {"name": "Berries", "supply": 10}, {"name": "Grapes", "supply": 10}],
+        "personName": "David Johnson"
+      },
+      {
+        "name": "Citrus Grove",
+        "city": "Orlando",
+        "sinceWhen": "2009-08-05",
+        "contact": "sarah@citrustrove.com",
+        "numberOfStores": 6,
+        "specialties": [{"name": "Lemons", "supply": 10}, {"name": "Grapefruits", "supply": 10}, {"name": "Limes", "supply": 10}],
+        "personName": "Sarah Lee"
+      },
+      {
+        "name": "Berry Blast",
+        "city": "San Francisco",
+        "sinceWhen": "2015-02-20",
+        "contact": "michael@berryblast.com",
+        "numberOfStores": 9,
+        "specialties": [{"name": "Strawberries", "supply": 10}, {"name": "Blueberries", "supply": 10}, {"name": "Raspberries", "supply": 10}],
+        "personName": "Michael Smith"
+      },
+      {
+        "name": "Exotic Fruits Ltd.",
+        "city": "Honolulu",
+        "sinceWhen": "2011-07-12",
+        "contact": "emily@exoticfruits.com",
+        "numberOfStores": 5,
+        "specialties": [{"name": "Dragonfruit", "supply": 10}, {"name": "Passionfruit", "supply": 10}, {"name": "Papayas", "supply": 10}],
+        "personName": "Emily Wong"
+      }
+    ],
+    "cities" :[
+      {
+        "country": "AD",
+        "name": "Sant Julià de Lòria",
+        "lat": "42.46372",
+        "lng": "1.49129"
+      },
+      {
+        "country": "AD",
+        "name": "Pas de la Casa",
+        "lat": "42.54277",
+        "lng": "1.73361"
+      },
+      {
+        "country": "AD",
+        "name": "Ordino",
+        "lat": "42.55623",
+        "lng": "1.53319"
+      },
+      {
+        "country": "AD",
+        "name": "les Escaldes",
+        "lat": "42.50729",
+        "lng": "1.53414"
+      },
+      {
+        "country": "AD",
+        "name": "la Massana",
+        "lat": "42.54499",
+        "lng": "1.51483"
+      },
+      {
+        "country": "AD",
+        "name": "Encamp",
+        "lat": "42.53474",
+        "lng": "1.58014"
+      },
+      {
+        "country": "AD",
+        "name": "Canillo",
+        "lat": "42.5676",
+        "lng": "1.59756"
+      },
+      {
+        "country": "AD",
+        "name": "Arinsal",
+        "lat": "42.57205",
+        "lng": "1.48453"
+      },
+      {
+        "country": "AD",
+        "name": "Andorra la Vella",
+        "lat": "42.50779",
+        "lng": "1.52109"
+      },
+      {
+        "country": "AE",
+        "name": "Umm Al Quwain City",
+        "lat": "25.56473",
+        "lng": "55.55517"
+      },
+      {
+        "country": "AE",
+        "name": "Ras Al Khaimah City",
+        "lat": "25.78953",
+        "lng": "55.9432"
+      },
+      {
+        "country": "AE",
+        "name": "Muzayri‘",
+        "lat": "23.14355",
+        "lng": "53.7881"
+      },
+      {
+        "country": "AE",
+        "name": "Murbaḩ",
+        "lat": "25.27623",
+        "lng": "56.36256"
+      },
+      {
+        "country": "AE",
+        "name": "Maşfūţ",
+        "lat": "24.81089",
+        "lng": "56.10657"
+      }]
+}
